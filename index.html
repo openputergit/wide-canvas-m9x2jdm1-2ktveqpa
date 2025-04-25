@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Podiatry Association</title>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .neomorphic {
+            border-radius: 20px;
+            background: #e0e5ec;
+            box-shadow: 8px 8px 15px #a3b1c6, -8px -8px 15px #ffffff;
+        }
+        .neomorphic-button {
+            border-radius: 10px;
+            background: #e0e5ec;
+            box-shadow: 5px 5px 10px #a3b1c6, -5px -5px 10px #ffffff;
+            transition: all 0.3s ease;
+        }
+        .neomorphic-button:hover {
+            box-shadow: inset 5px 5px 10px #a3b1c6, inset -5px -5px 10px #ffffff;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-animation {
+            animation: float 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-[#e0e5ec]">
+    <!-- Navigation -->
+    <nav class="neomorphic fixed w-full z-10 p-4">
+        <div class="container mx-auto flex flex-wrap justify-between items-center">
+            <div class="text-2xl font-bold text-blue-800">IPA</div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="neomorphic-button px-4 py-2">Home</a>
+                <a href="#about" class="neomorphic-button px-4 py-2">About</a>
+                <a href="#conferences" class="neomorphic-button px-4 py-2">Conferences & Workshops</a>
+                <a href="#testimonials" class="neomorphic-button px-4 py-2">Testimonials</a>
+                <a href="#contact" class="neomorphic-button px-4 py-2">Contact</a>
+            </div>
+            <button class="md:hidden neomorphic-button p-2">
+                <i class="bi bi-list text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-20 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between py-20">
+            <div data-aos="fade-right" class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold text-blue-800 mb-4">Indian Podiatry Association</h1>
+                <p class="text-xl md:text-2xl text-gray-600">Saving Limbs, Changing Lives</p>
+            </div>
+            <div data-aos="fade-left" class="md:w-1/2 text-center">
+                <div class="neomorphic p-8 inline-block">
+                    <h2 class="text-2xl font-bold text-blue-800 mb-6">Become a IPA Life Member</h2>
+                    <button class="neomorphic-button px-8 py-4 text-xl font-bold text-blue-800 hover:text-blue-900">
+                        Register Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Work Section -->
+    <section class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 data-aos="fade-up" class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-16">Our Work</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div data-aos="fade-up" class="neomorphic p-6 float-animation">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=500" alt="Podiatry Care" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">Clinical Excellence</h3>
+                    <p class="text-gray-600">Providing world-class podiatric care with latest technologies and techniques.</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100" class="neomorphic p-6 float-animation">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=500" alt="Research" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">Research & Education</h3>
+                    <p class="text-gray-600">Advancing podiatric medicine through research and continuous education.</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200" class="neomorphic p-6 float-animation">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=500" alt="Community Service" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">Community Service</h3>
+                    <p class="text-gray-600">Making podiatric care accessible to all sections of society.</p>
+                </div>
+            </div>
+            <div data-aos="fade-up" class="neomorphic p-8 text-center">
+                <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                    The Indian Podiatry Association is committed to advancing foot and ankle care through professional development, research, and community service. Our members are dedicated to improving patients' quality of life through expert care and innovative treatments.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="neomorphic py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold text-blue-800 mb-4">Contact Us</h4>
+                    <p class="text-gray-600">Email: info@ipa.org</p>
+                    <p class="text-gray-600">Phone: +91 123 456 7890</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold text-blue-800 mb-4">Quick Links</h4>
+                    <ul class="text-gray-600">
+                        <li><a href="#" class="hover:text-blue-800">Membership</a></li>
+                        <li><a href="#" class="hover:text-blue-800">Events</a></li>
+                        <li><a href="#" class="hover:text-blue-800">Resources</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold text-blue-800 mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-blue-800"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-blue-800"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-blue-800"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold text-blue-800 mb-4">Newsletter</h4>
+                    <form class="flex">
+                        <input type="email" placeholder="Enter your email" class="neomorphic p-2 flex-grow">
+                        <button type="submit" class="neomorphic-button px-4 ml-2">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center mt-8 text-gray-600">
+                © 2023 Indian Podiatry Association. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Mobile menu toggle
+        document.querySelector('.md\\:hidden').addEventListener('click', function() {
+            const mobileMenu = document.createElement('div');
+            mobileMenu.className = 'fixed inset-0 bg-[#e0e5ec] z-50 flex flex-col items-center justify-center space-y-4';
+            mobileMenu.innerHTML = `
+                <a href="#home" class="neomorphic-button px-4 py-2">Home</a>
+                <a href="#about" class="neomorphic-button px-4 py-2">About</a>
+                <a href="#conferences" class="neomorphic-button px-4 py-2">Conferences & Workshops</a>
+                <a href="#testimonials" class="neomorphic-button px-4 py-2">Testimonials</a>
+                <a href="#contact" class="neomorphic-button px-4 py-2">Contact</a>
+                <button class="neomorphic-button px-4 py-2 mt-4">Close</button>
+            `;
+            document.body.appendChild(mobileMenu);
+            document.body.style.overflow = 'hidden';
+
+            mobileMenu.querySelector('button').addEventListener('click', function() {
+                mobileMenu.remove();
+                document.body.style.overflow = 'auto';
+            });
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
